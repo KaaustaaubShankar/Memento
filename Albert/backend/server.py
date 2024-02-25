@@ -25,7 +25,7 @@ def questions():
     conn = psycopg2.connect(
         host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
         user="postgres",
-        password="QSrq7SVVIJseJIxe",
+        password="why",
         port="5432"
     )
     #cursor for postgres
@@ -55,7 +55,7 @@ def insert():
   conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
   )
   #cursor for postgres
@@ -80,7 +80,7 @@ def get():
   conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
   )
   #cursor for postgres
@@ -102,7 +102,7 @@ def get_column():
   conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
   )
 
@@ -211,7 +211,7 @@ def vectorize_search(related_words):
     conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
     )
     #write me code to create a cursor for postgres
@@ -267,7 +267,7 @@ def answer_question():
     conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
     )
     #write me code to create a cursor for postgres
@@ -304,7 +304,7 @@ def answer_question():
 
 def generate_summary_and_extract_list(user_message, data_dump):
     # Initialize the OpenAI client with your API key
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="why")
 
     message = f"You are an assistant who summarizes in 2nd person the diary entries for an Alzheimer's patient to refresh their memory based on 'entrytext:' and return also the most relevant date in [summary, date] format, feel free to correct the user if the prompt is obviously contradicting data. The data is below and has ('entrydate', 'entrytext', and 'similarity_score'). Similarity_score is equivalent to the importance of the sentence. {data_dump} THE RETURN MUST BE A LIST IN [DATE, summary] the summary is a general answer to the users question while inferring from their past memories. The list should have only 1 SINGULAR element."
     # Make the API call
@@ -356,7 +356,7 @@ SELECT * FROM vectorize.search(
 conn = psycopg2.connect(
     host="org-buycott-inst-alzvectorbackend.data-1.use1.tembo.io",
     user="postgres",
-    password="QSrq7SVVIJseJIxe",
+    password="why",
     port="5432"
   )
   #cursor for postgres
